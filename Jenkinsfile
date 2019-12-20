@@ -6,7 +6,7 @@ pipeline {
         parallel(
           "initial": {
             sh 'echo "Hello"'
-          }
+          },
           "initial2": {
             echo 'abc'
             
