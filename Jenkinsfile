@@ -6,8 +6,7 @@ pipeline {
         parallel(
           "initial": {
             sh 'echo "Hello"'
-            
-          },
+          }
           "initial2": {
             echo 'abc'
             
@@ -17,7 +16,7 @@ pipeline {
     }
     stage('maven build') {
       steps {
-        sh 'mvn clean'
+        sh 'maven clean'
       }
     }
     stage('Deploy') {
@@ -33,4 +32,3 @@ pipeline {
 }
   }
 }
-Hello
