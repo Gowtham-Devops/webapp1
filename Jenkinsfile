@@ -17,7 +17,7 @@ pipeline {
     }
     stage('maven build') {
       steps {
-        sh 'mvn clean'
+        sh 'maven clean'
       }
     }
     stage('Deploy') {
